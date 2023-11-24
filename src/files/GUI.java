@@ -1,7 +1,11 @@
 package files;
 
 import java.awt.Color;
+<<<<<<< HEAD
 import java.awt.FlowLayout;
+=======
+import java.awt.Dimension;
+>>>>>>> 1aaf144e8662906cc93ee4407cfef25dac3bdf5f
 import java.awt.GridLayout;
 
 import javax.swing.JButton;
@@ -30,11 +34,12 @@ public class GUI
     private void create()
     {
         JFrame frame = new JFrame();
-        frame.setSize(1250, 750);
+        frame.setSize(1249, 750);
         frame.setVisible(true);
         frame.setTitle("Fanbaslan");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setBackground(new Color(0x705549));
+        frame.setMinimumSize(new Dimension(1250, 750));
         
         JPanel ColorsLeft = new JPanel(new GridLayout(5, 6));
         JPanel BottomFrame = new JPanel();
@@ -79,5 +84,6 @@ public class GUI
 
 
         frame.add(empty);
+        frame.setSize(1250, 750);
     }
 }
