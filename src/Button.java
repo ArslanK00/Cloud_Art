@@ -3,7 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
-
+//test
 public class Button extends JButton implements ActionListener
 {
     private int x, y, width, height;
