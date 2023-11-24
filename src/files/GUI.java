@@ -31,7 +31,7 @@ public class GUI
         JFrame frame = new JFrame();
         frame.setSize(1250, 750);
         frame.setVisible(true);
-        frame.setTitle("I Fuckng hate this");
+        frame.setTitle("Fanbaslan");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setBackground(new Color(0x705549));
         
