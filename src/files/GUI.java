@@ -1,11 +1,8 @@
 package files;
 
 import java.awt.Color;
-<<<<<<< HEAD
 import java.awt.FlowLayout;
-=======
 import java.awt.Dimension;
->>>>>>> 1aaf144e8662906cc93ee4407cfef25dac3bdf5f
 import java.awt.GridLayout;
 
 import javax.swing.JButton;
@@ -66,8 +63,10 @@ public class GUI
                 { 
                     b = new Button(0, 0, 40, 100, Color.white);
                 }
-                
-                b.setActionCommand(b.getColor().toString());
+                String temp = String.valueOf(b.getColor().getRed());
+                temp += " " + b.getColor().getGreen();
+                temp += " " + b.getColor().getBlue();
+                b.setActionCommand(temp);
                 ColorsLeft.add(b);
             }
         }
