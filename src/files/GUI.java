@@ -1,6 +1,7 @@
 package files;
 
 import java.awt.Color;
+import java.awt.FlowLayout;
 import java.awt.GridLayout;
 
 import javax.swing.JButton;
@@ -53,8 +54,14 @@ public class GUI
             for(int j = 1; j <= 5; j++)
             {
                 if( i * j < c.length)
-                { b = new Button(0, 0, 40, 100, c[i*j]);}
-                else{ b = new Button(0, 0, 40, 100, Color.white);}
+                {
+                    b = new Button(0, 0, 40, 100, c[i*j]);
+                }
+                else
+                { 
+                    b = new Button(0, 0, 40, 100, Color.white);
+                }
+                
                 b.setActionCommand(b.getColor().toString());
                 ColorsLeft.add(b);
             }
